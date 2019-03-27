@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <title>Eligible Scholarships</title>
+    <link rel="stylesheet" type="text/css" href="../css/style1.css" />
+</head>
+
+<body>
+<div class="biggest">
+
+    <div class = "topPage">
+        <a href="https://mankato.mnsu.edu/">
+            <img src = "http://127.0.0.1:8887/mnsu-logo.png" style = "width:1500px; height:200px;">
+        </a>
+    </div>
+
+    <div class="secondBiggest">
+        <div class="navigation">
+            <ul class = "navs">
+                <li id= "aTag" ><a href="https://mankato.mnsu.edu/">MNSU Homepage</a></li>
+                <li id= "aTag" ><a href="https://www.mnsu.edu/eservices/">Eservices Mnsu</a></li>
+                <li id= "aTag" ><a href="https://mnsu.academicworks.com/">Scholarship Finder</a></li>
+                <li id= "aTag "><a href=""> About</a></li>
+            </ul>
+        </div>
+    
+
+        <div class="list">
+            <% list.forEach(function(row) { %>
+                <li><a href="<%= row.link%>" ><%= row.name %></a></li>
+            <% }); %>
+        </div>
+    </div>
+</div>
+</body> 

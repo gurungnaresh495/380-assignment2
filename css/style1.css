@@ -1,0 +1,46 @@
+
+
+.navs{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    background-color: #f1f1f1;
+  }
+  
+ #aTag{
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-decoration: none;
+  }
+  
+  a{
+      text-decoration: none;
+  }
+
+  /* Change the link color on hover */
+  #aTag:hover {
+    background-color: #555;
+    color: white;
+  }
+
+  .navigation{
+      position: static;
+      height: 900px;
+      width: 300px;
+      float:left;
+      font-size: 30px;
+  }
+
+  .list{
+      position: static;
+      height: 900px;
+      width: 900px;
+      float: left;
+      background-color: paleturquoise;
+      text-align: center;   
+      font-size: 40px;
+      text-decoration: none;
+  }
