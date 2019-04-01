@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	<body>
+		<header class="v-header container">
+			<div class = "topPage">
+				<a href="https://mankato.mnsu.edu/">
+					<img src = "http://127.0.0.1:9000/mnsu-logo.png" style = "width:1500px; height:200px;">
+				</a>
+			</div>
+			<div class="fullscreen-video-wrap">
+				<video autoplay loop id="video-background" muted plays-inline>
+					<source src="http://127.0.0.1:9000/international.mp4" type="video/mp4"></source> </video>
+			</div>
+			
+			<div class="formDiv" >
+				<form class="formLogin" action="/login" type="post">
+					<label for="starId"> StarId: </label>
+					<input type="text" class="inputStarId" name = "starId">
+					<label for="pwd"> Password: </label>
+					<input type="password" class="inputPassword" name ="pass">
+					<input type="submit" class="login" value="login">
+				</form>
+			</div>
+		
+		</header>
+		<section class="sectionBottompage">
+			<div class="bottomContainer">
+				<h1> About Us </h1>
+				<p> International students are the assets of the Minnesota State
+				University. We will guide you through all possible ways to secure one or more 
+				scholarships that are available for you</p>
+			</div>
+		</section>
+	
+		
+	</body>
+</html>
