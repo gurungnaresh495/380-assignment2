@@ -50,6 +50,7 @@ app.get('/css/style1.css', function(req, res)
     res.sendFile(__dirname + '/css/style1.css');
 });
 
+
 //loading list file
 app.get('/list', function(req, res)
 {
@@ -81,9 +82,7 @@ app.get('/list', function(req, res)
                 }
             });
         }
-    });
-    
-    
+    });    
 });
 app.get('/login', function(req, res)
 {

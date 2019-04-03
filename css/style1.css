@@ -1,11 +1,14 @@
 
 
+body{
+    background-color: lightgrey;
+}
 .navs{
-    list-style-type: none;
     margin: 0;
     padding: 0;
     width: 300px;
     background-color: #f1f1f1;
+    list-style-type: none;
   }
   
  #aTag{
@@ -39,8 +42,9 @@
       height: 900px;
       width: 900px;
       float: left;
-      background-color: paleturquoise;
+      background-color: lightgrey;
       text-align: center;   
       font-size: 40px;
       text-decoration: none;
+      border: 2px;
   }
