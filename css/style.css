@@ -13,9 +13,9 @@ body{
 .v-header{
   display:flex;
   height:100vh;
-  
-  color:#fff;
+   color:#fff;
 }
+
 
 .formDiv{
 	font-size:2rem;

@@ -6,28 +6,33 @@
 
 <body>
 <div class="biggest">
-
+    
     <div class = "topPage">
         <a href="https://mankato.mnsu.edu/">
             <img src = "http://127.0.0.1:9000/mnsu-logo.png" style = "width:1500px; height:200px;">
         </a>
     </div>
 
-    <div class="secondBiggest">
-        <div class="navigation">
-            <ul class = "navs">
+    <div id="secondBiggest">
+        <div  class="navigation">
+            <ul id = "navs">
                 <li id= "aTag" ><a href="https://mankato.mnsu.edu/">MNSU Homepage</a></li>
                 <li id= "aTag" ><a href="https://www.mnsu.edu/eservices/">Eservices Mnsu</a></li>
                 <li id= "aTag" ><a href="https://mnsu.academicworks.com/">Scholarship Finder</a></li>
-                <li id= "aTag "><a href=""> About</a></li>
+                <li id= "aTag" ><a href="https://mnsu.academicworks.com/">About</a></li>
             </ul>
         </div>
     
 
         <div class="list">
-            <% list.forEach(function(row) { %>
-                <li><a href="<%= row.link%>" ><%= row.name %></a></li>
-            <% }); %>
+            <ul id="looplist">
+                <% list.forEach(function(row) { %>
+                    <div class="listDiv">
+                        <li id = "listTab"><a href="<%= row.link%>" ><%= row.name %></a></li>
+                        <p id="paragraph"> <%=row.description %></p>
+                    </div>
+                <% }); %>
+            </ul>
         </div>
     </div>
 </div>

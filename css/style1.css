@@ -1,27 +1,64 @@
 
 
 body{
-    background-color: lightgrey;
+    background: url(http://127.0.0.1:9000/mavericks.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
 }
-.navs{
+ul#navs{
     margin: 0;
     padding: 0;
-    width: 300px;
-    background-color: #f1f1f1;
+    width: 280px;
     list-style-type: none;
   }
+
+.background{
+	z-index: -5;
+	opacity: 0.2;
+	position: absolute;
+}
+
+ul#looplist{
+    list-style-type: none;
+    border-style: solid;
+    border: 5px;
+    margin: 0;
+}
   
  #aTag{
+    height: 35px;
     display: block;
-    color: #000;
+    color: rgb(236, 4, 178);
     padding: 8px 16px;
     text-decoration: none;
-    text-decoration: none;
+    
+    border-left-style: solid;
+    border-left-width: 5px;
+    border-left-color:  purple;
+    border-bottom-color: white;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    border-right-width: 5px;
+    border-right-color:  purple;
+    border-top-color: white;
+    border-top-width: 2px;
+    border-top-style: solid;
+  }
+
+  #listTab{
+    border-left-style: solid;
+    border-left-width: 10px;
+    border-left-color:  purple;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color:  rgb(248, 246, 248);
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(181, 7, 187));
+    color: white;
+    
   }
   
-  a{
-      text-decoration: none;
-  }
 
   /* Change the link color on hover */
   #aTag:hover {
@@ -30,6 +67,7 @@ body{
   }
 
   .navigation{
+      margin: 0;
       position: static;
       height: 900px;
       width: 300px;
@@ -38,13 +76,25 @@ body{
   }
 
   .list{
+
+      margin: 0;
       position: static;
       height: 900px;
-      width: 900px;
-      float: left;
-      background-color: lightgrey;
-      text-align: center;   
+      width: 700px;
+      float: left; 
       font-size: 40px;
       text-decoration: none;
-      border: 2px;
   }
+
+  .listDiv{
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    border-bottom-color:  white;
+    margin: 0;
+  }
+
+#paragraph{
+    margin: 0;
+    font-size: 20px;
+}
+
