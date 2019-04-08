@@ -62,7 +62,7 @@ app.get('/list', function(req, res)
             console.log(err);
         }
         else{
-            connection.query('SELECT * FROM scholarships WHERE scholarshipGPA <= ? AND scholarshipCountry != ? AND scholarshipMajor = ?',
+            connection.query('SELECT * FROM scholarships WHERE scholarshipGPA < ? AND scholarshipCountry != ? AND scholarshipMajor = ?',
             [rows[0].gpa, 'US', rows[0].major], (err, sRows, sFields) =>
             {
                 if (err)
